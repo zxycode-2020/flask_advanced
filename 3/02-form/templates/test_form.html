@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}表单测试{% endblock %}
+
+{% block page_content %}
+
+{% if name %}
+    <h1>Hello {{name}}</h1>
+{% endif %}
+
+<div class="col-md-4">
+{# 渲染表单 #}
+{{ wtf.quick_form(form) }}
+</div>
+
+{% endblock %}

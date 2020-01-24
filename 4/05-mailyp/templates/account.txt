@@ -1,0 +1,2 @@
+你好:{{name}}
+激活请点击右边链接 https://www.baidu.com 激活

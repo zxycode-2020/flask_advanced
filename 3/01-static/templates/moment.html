@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}时间戳显示{% endblock %}
+
+{% block page_content %}
+
+{# 简化的格式化显示方式 #}
+<p>时间日期(简化)：{{ moment(current_time).format('L') }}</p>
+
+{# 定制的格式化显示方式 #}
+<p>时间日期(定制)：{{ moment(current_time).format('YYYY-MM-DD') }}</p>
+
+<p>发表于：{{ moment(current_time).fromNow() }}</p>
+
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+
+    {# 加载moment需要的js文件 #}
+    {{ moment.include_moment() }}
+
+    {# 设置中文显示，默认是英文 #}
+    {{ moment.locale('zh-CN') }}
+{% endblock %}

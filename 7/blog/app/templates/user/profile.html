@@ -1,0 +1,14 @@
+{% extends 'common/base.html' %}
+
+{% block title %}个人信息{% endblock %}
+
+{% block page_content %}
+<div class="form-group">
+    <label for="InputUsername">用户名</label>
+    <input type="text" class="form-control" id="InputUsername" value="{{current_user.username}}" disabled>
+</div>
+<div class="form-group">
+    <label for="InputEmail">邮箱</label>
+    <input type="text" class="form-control" id="InputEmail" value="{{current_user.email}}" disabled>
+</div>
+{% endblock %}
