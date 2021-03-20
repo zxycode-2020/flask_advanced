@@ -23,7 +23,7 @@ Flask-Uploads==0.2.1
 Flask-WTF==0.14.2
 html5lib==1.0b10
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 lamson==1.3.4
 lockfile==0.12.2
 Mako==1.0.7
